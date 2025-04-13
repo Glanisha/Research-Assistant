@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 16px;
+    width: 350px;
+    min-height: 500px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.header h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: #2d3748;
+    font-weight: 600;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    background-color: #f7fafc;
+    color: #2d3748;
+    border: 1px solid #e2e8f0;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #edf2f7;
+    transform: translateY(-1px);
+}
+
+#summarization {
+    background-color: #4299e1;
+    color: white;
+    border-color: #3182ce;
+}
+
+#summarization:hover {
+    background-color: #3182ce;
+}
+
+#suggestTopics {
+    background-color: #68d391;
+    color: white;
+    border-color: #48bb78;
+}
+
+#suggestTopics:hover {
+    background-color: #48bb78;
+}
+
+.notes h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #2d3748;
+    font-weight: 500;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    background-color: #f8fafc;
+    color: #1a202c;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 10px;
+    resize: none;
+    outline: none;
+    transition: border-color 0.2s;
+    font-size: 0.9rem;
+}
+
+textarea:focus {
+    border-color: #4299e1;
+    box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.2);
+}
+
+.notes-buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.notes-buttons button {
+    flex: 1;
+    padding: 8px;
+    font-size: 0.85rem;
+}
+
+#saveNotesBtn {
+    background-color: #f6e05e;
+    border-color: #ecc94b;
+}
+
+#clearNotesBtn {
+    background-color: #fc8181;
+    color: white;
+    border-color: #f56565;
+}
+
+#exportPdfBtn {
+    background-color: #9f7aea;
+    color: white;
+    border-color: #805ad5;
+}
+
+#results {
+    margin-top: 16px;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    min-height: 50px;
+    color: #2d3748;
+    font-size: 0.9rem;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.topic {
+    margin-bottom: 12px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 6px;
+    border-left: 3px solid #4299e1;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.topic-title {
+    font-weight: 600;
+    color: #2b6cb0;
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+}
+
+.topic-description {
+    color: #4a5568;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.error-message {
+    color: #e53e3e;
+    font-size: 0.85rem;
+}

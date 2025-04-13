@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Assistant</title>
+    <link rel="stylesheet" href="side_panel.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Research Assistant</h2>
+        </div>
+
+        <div class="actions">
+           <button id="summarization">Summarize</button>
+           <button id="suggestTopics">Suggest Topics</button>
+        </div>
+
+        <div class="notes">
+            <h3>Research notes</h3>
+            <textarea name="notes" id="notes" placeholder="Type notes here"></textarea>
+            <div class="notes-buttons">
+                <button id="saveNotesBtn">Save Notes</button>
+                <button id="clearNotesBtn">Clear Notes</button>
+                <button id="exportPdfBtn">Export to PDF</button>
+            </div>
+         </div>
+
+         <div id="results"></div>
+    </div>
+
+    <script src="side_panel.js"></script>
+</body>
+</html>

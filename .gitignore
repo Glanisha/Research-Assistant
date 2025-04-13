@@ -1,0 +1,9 @@
+
+.idea/
+*.iml
+assistant/target/
+*.log
+.DS_Store
+Thumbs.db
+node_modules/
+*.env
